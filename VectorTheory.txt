@@ -42,7 +42,7 @@ I * X = X * I for all X
 For convenience's sake, we will define an alternative identity vector
 I' to simplify the shorthand of defining a vector with only a complex component.
 We will write this as I'; in truth, this is just a complex vector
-C = [0, iθ].
+C = [0, 1].
 
 The zero vector is easy; it is simply the vector (0, 0).  As will be seen
 later when we define our system of multiplication, the identity vector will
@@ -85,7 +85,7 @@ I2 can be seen to have the same magnitude as I1, but with a 90 degree rotation.
 We can also see that any purely real vector will never rotate our vector.
 It will, however, scale it by its magnitude
 This can be seen from I1 * I' = I2:  (a, bi) * (c, 0) = (c * a, c * bi)
-02 = atan(c * b / c * a) = atan(b / a) = 01
+θ2 = atan(c * b / c * a) = atan(b / a) = θ1
 
 Next, since (A * B) * C = A * (B * C),
 if B = (n, 0) and C = I'
@@ -100,7 +100,7 @@ A * (B + C) = A * B + A * C
 A * B = A scaled by n
 A * C = A scaled by m and rotated by 90 degrees
 These two vectors summed together form a right triangle whose magnitude is |A| * (m^2 + n^2) ^ /.5
-and whose angle is 0a + atan(m / n)
+and whose angle is θa + atan(m / n)
 
 However, if we define a vector D = B + C, we will find that |D| = (m^2 + n^2) ^ /.5 and 0d = atan(m / n)
 
@@ -109,7 +109,7 @@ This gives us a definition of the multiplication of two vectors:
 --------------------------------------------------------------------------
              VECTOR-VECTOR MULTIPLICATION - DEFINITION
 --------------------------------------------------------------------------
-A * B = C where |C| = |A| * |B| and 0c = 0a + 0b
+A * B = C where |C| = |A| * |B| and θc = θa + θb
 
 
 
