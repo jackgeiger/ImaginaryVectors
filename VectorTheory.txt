@@ -102,7 +102,7 @@ A * C = A scaled by m and rotated by 90 degrees
 These two vectors summed together form a right triangle whose magnitude is |A| * (m^2 + n^2) ^ /.5
 and whose angle is θa + atan(m / n)
 
-However, if we define a vector D = B + C, we will find that |D| = (m^2 + n^2) ^ /.5 and 0d = atan(m / n)
+However, if we define a vector D = B + C, we will find that |D| = (m^2 + n^2) ^ /.5 and θd = atan(m / n)
 
 This gives us a definition of the multiplication of two vectors:
 
@@ -286,10 +286,10 @@ at a series length of 18.
 Testing this definition out yields some interesting results.
 
 If F(V) = E^V:
-F(n*I) = (e^n<0)
+F(n*I) = (e^n ∠ 0)
     this is as expected; vector arithmetic for "scalar vectors" is equivalent to scalar
     arithmetic
-F(n*I') = (1<n)
+F(n*I') = (1 ∠ n)
     this is somewhat surprising, but does prove Euler's theorem in vector space:
     e^ix = cos(x) + i*sin(x)
 
@@ -297,6 +297,9 @@ Is it true that F'(x) = F(x)?
 F'(x) = -sin(x) + i*cos(x)
 From this, it is obvious that F(x) != F'(x)
 Therefore, this derivation is invalid!!  Our assumption did not hold true!
+            I'm pretty sure I did some math wrong here.  My physics tutor showed
+            me that I got this wrong but I don't remember why.  Too bad, turns
+            out Euler was right all along.
 
 So trying to derive this from "first principles" has not yet been successful.
 
